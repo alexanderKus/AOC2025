@@ -26,7 +26,7 @@ public class Day2 : InputReader, IPuzzle
                 {
                     sum += i; 
 #if DEBUG
-                    //Console.WriteLine($"{start}-{end} has one invalid ID, {i}.");
+                    Console.WriteLine($"{start}-{end} has one invalid ID, {i}.");
 #endif
                 }
             }
