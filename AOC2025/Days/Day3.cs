@@ -18,7 +18,7 @@ public class Day3 : InputReader, IPuzzle
                 }
             }
 #if DEBUG
-            Console.WriteLine($"For {line} the largest joltage you can produce is {s}{e}");
+            Console.WriteLine($"For {line} the largest joltage you can produce is {number}");
 #endif
             sum += number;
         }
