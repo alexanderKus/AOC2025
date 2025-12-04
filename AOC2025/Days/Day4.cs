@@ -46,6 +46,9 @@ public class Day4 : InputReader, IPuzzle
         var lines = ReadInputLines().Select(x => x.ToCharArray()).ToArray();
         var count = 0;
         var hasRemoved = true;
+#if DEBUG
+        var iter = 1;
+#endif
         while (hasRemoved)
         {
             hasRemoved = false;
@@ -82,6 +85,18 @@ public class Day4 : InputReader, IPuzzle
                     }
                 }
             }
+#if DEBUG
+            Console.SetCursorPosition(0, 0);
+            Console.Write(new string(' ', Console.BufferWidth * Console.BufferHeight));
+            Console.SetCursorPosition(0, 0);
+            Console.WriteLine($"Iteration {iter}: {count} removed.");
+            foreach (var line in lines)
+            {
+                Console.WriteLine(new string(line));
+            }
+            iter++;
+            Thread.Sleep(200);
+#endif
         }
         return count.ToString();
     }
