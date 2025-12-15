@@ -3,7 +3,7 @@ using Microsoft.Z3;
 
 namespace AOC2025.Days;
 
-public class Day12 : InputReader, IPuzzle
+public class Day10 : InputReader, IPuzzle
 {
     public int Day { get; } = 10;
     public string SolvePart1()
